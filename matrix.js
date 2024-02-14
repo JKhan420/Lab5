@@ -128,7 +128,7 @@ const getMatrixData2D = function (matrixId) {
 
 // Add your matrix calculation functions here
 // The functions must check the posibility of calculation too.
-function addMatrices(matrix1, matrix2) {
+const addMatrices = function(matrix1, matrix2) {
     if (matrix1.length !== matrix2.length || matrix1[0].length !== matrix2[0].length) {
         console.log("Matrix addition is not possible.");
         return null;
@@ -160,9 +160,9 @@ const subtractMatrices = function(matrix1, matrix2) {
         result.push(row);
     }
     return result;
-};
+}
 
-const multiplyMatrices = (matrix1, matrix2) => {
+const multiplyMatrices = function(matrix1, matrix2) {
     if (matrix1[0].length !== matrix2.length) {
         console.log("Matrix multiplication is not possible.");
         return null;
@@ -181,6 +181,6 @@ const multiplyMatrices = (matrix1, matrix2) => {
         result.push(row);
     }
     return result;
-};
+}
 
 
